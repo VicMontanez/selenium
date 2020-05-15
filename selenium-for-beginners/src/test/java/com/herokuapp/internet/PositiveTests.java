@@ -16,6 +16,9 @@ public class PositiveTests {
 		String url = "https://the-internet.herokuapp.com/login";
 		driver.get(url);
 		
+		//maximize browser window
+		driver.manage().window().maximize();
+		
 		// sleep for 3 seconds
 //		sleep(3000);
 		
