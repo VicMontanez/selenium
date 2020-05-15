@@ -23,6 +23,9 @@ public class PositiveTests {
 		// sleep for 3 seconds
 //		sleep(3000);
 		
+		// close browser
+		driver.quit();
+		
 	}
 
 }
