@@ -12,6 +12,9 @@ public class PositiveTests {
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
+		//open test page 
+		driver.get(url);
+		
 		// sleep for 3 seconds
 //		sleep(3000);
 		
