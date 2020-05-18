@@ -35,7 +35,7 @@ public class PositiveTests {
 		WebElement password = driver.findElement(By.name("password"));
 		
 		//click login button
-	
+		WebElement loginButton = driver.findElement(By.tagName("button"));
 		
 		// close browser
 		driver.quit();
