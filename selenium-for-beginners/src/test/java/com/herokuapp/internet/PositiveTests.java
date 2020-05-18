@@ -37,6 +37,9 @@ public class PositiveTests {
 		//click login button
 		WebElement loginButton = driver.findElement(By.tagName("button"));
 		
+		//logout button
+		WebElement logoutButton = driver.findElement(By.xpath("//a[@class= 'button secondary radius']"));
+		
 		// close browser
 		driver.quit();
 		
