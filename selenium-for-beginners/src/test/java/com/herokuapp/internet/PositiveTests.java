@@ -35,8 +35,10 @@ public class PositiveTests {
 		//enter password
 		WebElement password = driver.findElement(By.name("password"));
 		password.sendKeys("SuperSeceretPassword");
+		
 		//click login button
 		WebElement loginButton = driver.findElement(By.tagName("button"));
+		loginButton.click();
 		
 		//logout button
 		WebElement logoutButton = driver.findElement(By.xpath("//a[@class= 'button secondary radius']"));
