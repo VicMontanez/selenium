@@ -42,7 +42,7 @@ public class PositiveTests {
 		
 		//verifications
 		String expectedUrl = "http://the-internet.herokuapp.com/secure";
-		
+		String actualUrl = driver.getCurrentUrl();
 		//logout button
 		WebElement logoutButton = driver.findElement(By.xpath("//a[@class= 'button secondary radius']"));
 		
