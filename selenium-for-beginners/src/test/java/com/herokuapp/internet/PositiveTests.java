@@ -52,6 +52,8 @@ public class PositiveTests {
 		
 		//successful login message
 		WebElement successMessage = driver.findElement(By.cssSelector("#flash"));
+		String expectedMessage = "You logged into a se3cure area";
+		String actualMessage = successMessage.getText();
 		
 		// close browser
 		driver.quit();
