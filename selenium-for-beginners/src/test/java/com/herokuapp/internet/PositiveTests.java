@@ -54,6 +54,7 @@ public class PositiveTests {
 		WebElement successMessage = driver.findElement(By.cssSelector("#flash"));
 		String expectedMessage = "You logged into a se3cure area";
 		String actualMessage = successMessage.getText();
+		Assert.assertEquals(actualMessage, expectedMessage, "Actual message is not the same as expected");
 		
 		// close browser
 		driver.quit();
