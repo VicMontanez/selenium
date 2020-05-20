@@ -45,8 +45,10 @@ public class PositiveTests {
 		String expectedUrl = "http://the-internet.herokuapp.com/secure";
 		String actualUrl = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl, expectedUrl, "Actual page url is not the same as expected");
+		
 		//logout button
 		WebElement logoutButton = driver.findElement(By.xpath("//a[@class= 'button secondary radius']"));
+		Assert.assertTrue(logoutButton.isDisplayed(), "Log Out button is not visible");
 		
 		//successful login message
 		WebElement successMessage = driver.findElement(By.cssSelector("#flash"));
